@@ -35,6 +35,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>org.jboss.as.labs.datagrid.lab1.RestClient</main.class>
+        <!--main.class>org.jboss.as.labs.datagrid.lab1.HotrodClient</main.class -->
         <version.org.infinispan>6.3.1.Final-redhat-1</version.org.infinispan>
         <exec.plugin.version>1.4.0</exec.plugin.version>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -75,7 +76,6 @@
     </dependencies>
 
     <build>
-            name given to the generated jar) -->
         <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
