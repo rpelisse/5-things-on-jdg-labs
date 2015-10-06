@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <profiles>
+    <profile>
+      <id>pconf2015-nexus</id>
+      <repositories>
+        <repository>
+          <id>pconf2015-nexus-repository</id>
+          <name>Red Hat PConf 2015 Maven Repository</name>
+          <url>http://nexus.pconf2015.local:8081/nexus/content/groups/public/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </repository>
+
+        <repository>
+          <id>pconf2015-jdg-repository</id>
+          <name>Red Hat PConf 2015 JDG Maven Repository</name>
+          <url>http://nexus.pconf2015.local:8081/nexus/content/repositories/jdg/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </repository>
+
+        <repository>
+          <id>pconf2015-jdg-file-repository</id>
+          <name>Red Hat PConf 2015 File JDG Maven Repository</name>
+          <url>file:///tmp/jboss-datagrid-6.5.1-maven-repository</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </repository>
+
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>pconf2015-nexus-repository</id>
+          <name>Red Hat PConf 2015 Maven Repository</name>
+          <url>http://nexus.pconf2015.local:8081/nexus/content/groups/public/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>pconf2015-nexus</activeProfile>
+  </activeProfiles>
+</settings>
+
